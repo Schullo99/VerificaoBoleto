@@ -17,11 +17,12 @@ public class Boleto {
 	private int codigo_banco;
 	private String nome;
 	private String CPF;
-	private String data_validade;
+	private String vencimento;
 	private String Rua;
 	private String Bairro;
 	private String Cidade;
 	private String CEP;
+	private double valor;
 	
 	@ManyToOne
 	public long getId() {
@@ -52,14 +53,9 @@ public class Boleto {
 		return CPF;
 	}
 	public void setCPF(String cPF) {
-		CPF = cPF;
+		CPF = CPF;
 	}
-	public String getData_validade() {
-		return data_validade;
-	}
-	public void setData_validade(String data_validade) {
-		this.data_validade = data_validade;
-	}
+
 	public String getRua() {
 		return Rua;
 	}
@@ -83,6 +79,19 @@ public class Boleto {
 	}
 	public void setCEP(String cEP) {
 		CEP = cEP;
+	
+	}
+	public double getValor() {
+		return valor;
+	}
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	public String getVencimento() {
+		return vencimento;
+	}
+	public void setVencimento(String vencimento) {
+		this.vencimento = vencimento;
 	}
 	
 	

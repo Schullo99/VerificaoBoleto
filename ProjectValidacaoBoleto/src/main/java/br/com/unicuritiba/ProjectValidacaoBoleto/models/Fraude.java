@@ -1,3 +1,4 @@
+
 package br.com.unicuritiba.ProjectValidacaoBoleto.models;
 
 import jakarta.persistence.Entity;

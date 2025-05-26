@@ -13,6 +13,7 @@ public class Empresa {
 	
 	private long id;
 	private String nome;
+	private String CNPJ;
 	private int codigo_verificacao;
 	private int cont_fraudes;
 	@OneToMany
@@ -40,6 +41,12 @@ public class Empresa {
 	}
 	public void setCont_fraudes(int cont_fraudes) {
 		this.cont_fraudes = cont_fraudes;
+	}
+	public String getCNPJ() {
+		return CNPJ;
+	}
+	public void setCNPJ(String cNPJ) {
+		CNPJ = cNPJ;
 	}
 	
 	
